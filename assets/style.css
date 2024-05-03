@@ -1,0 +1,370 @@
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+    background: #000;
+    max-width: 100%;
+  }
+/* Assuming you have a <header> element in your HTML */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10; /* Ensure it's above other content */
+  }
+  
+  header .logo {
+    /* Add your logo styles here */
+  }
+  
+  header .navigation {
+    /* Styles for your navigation links/buttons */
+  }
+  
+  header .navigation a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px; /* Space out the links */
+  }
+  
+  /* Add additional styling for language selector and login button as needed */
+  
+  .main {
+    padding: 50px;
+    text-align: center;
+  }
+  .title {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .signup-container {
+    margin: 20px;
+  }
+  .signup-input {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  .signup-button {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .thumbnails {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+  }
+  .thumbnail {
+    background-color: #333;
+    height: 200px;
+  }
+  .main-custom {
+  padding: 50px;
+  text-align: center;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0px, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), 
+                    url('https://assets.nflxext.com/ffe/siteui/vlv3/9f46b569-aff7-4975-9b8e-3212e4637f16/aaf33a3a-6951-4f7e-b713-1871d0b6db79/BR-pt-20240415-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative; /* For overlay positioning */
+}
+
+.default-ltr-cache-1y1tnl9 {
+  background: rgb(0 0 0 / 40%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar-custom {
+    background: transparent; /* Transparent background */
+    backdrop-filter: blur(5px); /* Blur effect */
+  }
+
+  .navbar-brand img {
+    height: 45px; /* Netflix logo height */
+  }
+
+  .btn-custom {
+    background-color: #e50914; /* Netflix red */
+    border: none;
+    transition: background-color 0.2s; /* Transition for smooth color change */
+  }
+
+  /* Hover effect for buttons */
+  .btn-custom:hover, .btn-custom:focus, .btn-custom:active {
+    background-color: #f40612; /* A darker shade for the button background on hover/active */
+  }
+
+  /* Right aligned items */
+  .right-aligned-items {
+    display: flex;
+    align-items: center;
+  }
+
+  /* The language selector styled as a transparent button */
+  .btn-language-selector {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    margin-right: 1rem; /* Spacing between language selector and the sign-in button */
+  }
+
+  .btn-language-selector:hover{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    margin-right: 1rem; /* Spacing between language selector and the sign-in button */
+  }
+
+  /* The 'Entrar' button */
+  .btn-sign-in {
+    background-color: #e50914; /* Netflix red */
+    border: none;
+    color: inherit;
+  }
+  .btn-sign-in:hover{
+    background-color: #c50811; /* Netflix red */
+    border: none;
+    color: inherit;
+  }
+  
+  /* Ensure the navbar is above all content */
+  .navbar-custom {
+    z-index: 1030; /* Higher than the default navbar z-index in Bootstrap */
+  }
+
+  /* ---------------------------------------------------------------------- */
+
+  .hero-section {
+    background: url('path-to-your-background-image.jpg') center center;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    padding: 4rem 0;
+  }
+
+  .hero-section .form-control {
+    border: 0;
+    background: rgba(22, 22, 22, 0.7);
+    border-color: rgba(128, 128, 128, 0.7);
+}
+
+    .form-control:focus {
+        color: inherit;
+        background: transparent;
+        border: 0 solid transparent;
+        outline: 0;
+        /* box-shadow: 0 0 0 0.10rem rgb(200 200 200 / 25%); */
+        box-shadow: 0 0 0 0.08em rgb(200 200 200 / 35%);
+    }
+
+  .hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .form-mobile  {
+    display: flex !important;
+    }
+
+  @media (max-width: 767px) {
+    .hero-section h1 {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    .hero-section p {
+        font-size: 1rem;
+        /* margin-bottom: 2rem; */
+    }
+    .form-mobile {
+        display: block !important;
+    }
+    .media-text {
+        padding: 0rem !important;
+    }
+  }
+
+  .hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-section .input-group {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .hero-section .btn {
+    background-color: #e50914;
+    border-color: #e50914;
+    font-size: 1.25rem;
+    padding: 0.1rem 1.5rem;
+  }
+
+  .hero-section .btn:hover {
+    background-color: #f40612;
+  }
+
+  .hero-section .form-control {
+    border: 0;
+  }
+
+  .hero-section .input-group-text {
+    background-color: #e50914;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-section .input-group-text .bi {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .transparent-input {
+    color: white;
+    width: 100%;
+    max-width: 415px;
+    border-radius: 4px;
+    padding: 0.5rem;
+    box-shadow: 0 0 0 0.08em rgb(200 200 200 / 35%);
+  }
+
+  .transparent-input::placeholder {
+    color: rgba(255, 255, 255, 0.5); /* Semi-transparent placeholder text */
+  }
+
+  /* ------------------------------------------------------------------------ */
+
+
+  .accordion-button {
+    background-color: #333; /* Dark background for accordion header */
+    color: #fff; /* White text color */
+    border: 1px solid #444; /* Slightly lighter border color */
+  }
+
+    .accordion-button {
+    position: relative; /* Position relative for absolute positioning of the icon */
+    padding-right: 60px; /* Add padding to make space for the icon */
+    }
+
+  .accordion-button:not(.collapsed) {
+    background-color: #222; /* Even darker for active accordion header */
+    color: #fff;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none; /* Remove Bootstrap's default focus outline */
+  }
+
+  .accordion-item {
+    background-color: #333; /* Dark background for accordion content */
+    border: none; /* No border */
+    margin-top: 0.6rem;
+  }
+
+  .accordion-button:focus {
+    z-index: 3;
+    border-color: #222222 !important;
+    outline: 0;
+    /* box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25); */
+}
+
+  .accordion-body {
+    font-size: 1rem; /* Adjust as per your preference */
+    line-height: 1.5; /* Adjust line spacing */
+    background-color: #222; /* Dark background for accordion body */
+    border-top: 1px solid #444; /* Slightly lighter border color for the top border */
+  }
+
+  .accordion-button::after {
+    /* Adjust the below styles to position your icon to the right */
+    position: absolute;
+    right: 20px; /* Distance from the right edge */
+    background-image: url('path-to-your-plus-icon.svg'); /* Replace with your icon */
+    background-repeat: no-repeat;
+    content: '';
+    height: 24px; /* Height of the icon */
+    width: 24px; /* Width of the icon */
+    transform: rotate(0deg); /* Default state */
+    transition: transform 0.2s ease-in-out; /* Animation for rotation */
+    }
+  
+  /* Adjust the title of the accordion */
+  .faq-title {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  /* ------------------------------------------- */
+
+  .footer {
+    color: #fff;
+    background-color: #000;
+    padding: 2rem 0;
+    font-size: 0.9rem;
+  }
+
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+  }
+
+  .footer .column {
+    margin-bottom: 1rem;
+  }
+
+  .footer .column h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* .footer .footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 1rem;
+    text-align: center;
+  } */
+
+  .footer .footer-bottom .language-selector {
+    cursor: pointer;
+  }
+  
+  .footer-phone-number {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-column ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+
+  .footer-column ul li a {
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    margin-bottom: 10px; /* Space between links */
+    display: block; /* Block level for easy alignment and spacing */
+  }
+
+  .footer-column ul li a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+  }
